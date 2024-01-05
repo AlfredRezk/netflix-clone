@@ -22,7 +22,7 @@ export default function Register() {
       <h2 className='text-red-600 text-2xl font-[500] text-center mb-3'>Sign Up</h2>
 
       {registerationFormFields.map(field=>(
-        <div className='relative mb-6 z-0'>
+        <div className='relative mb-6 z-0' key={field.name}>
           <Field type={field.type} name={field.name} id={field.name} placeholder=" " className="peer"/>
           <label htmlFor={field.name}> {field.label}</label>
         </div>
